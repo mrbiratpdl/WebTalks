@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<!-- InstanceBegin template="/Templates/bootstrap-5.1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to You!</title>
+<link href="../../css/bootstrap-5.1.css" rel="stylesheet" type="text/css">
+<link href="../../css/My_Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- InstanceBeginEditable name="content" -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">
+		WebTalks
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">
+					Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+					About
+					</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li>
+							<a class="dropdown-item" href="#">
+							Action
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">
+							Another action
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">
+							Something else here
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.php">
+					Contact Us
+					</a>
+				</li>
+			</ul>
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+			<button class="btn btn-primary mx-2"  data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+			<button class="btn btn-danger mx-2"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+		</div>
+	</div>
+</nav>
+
+<!-- Log In Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="loginModalLabel">Log In to WebTalks</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="mb-3">
+						<label for="login_input" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="login_input" aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text">
+							We'll never share your email with anyone else.
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- log in modal end-->
+	
+<!--signup modal -->
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="signupModalLabel">Create A WebTalks Account</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="mb-3">
+						<label for="name_Input" class="form-label">Your Name</label>
+						<input type="text" class="form-control" id="name_Input" aria-describedby="nameHelp">
+						
+					</div>
+					<div class="mb-3">
+						<label for="signup_email_input" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="signup_email_input" aria-describedby="emailSHelp">
+						<div id="emaiSlSHelp" class="form-text">
+							We'll never share your email with anyone else.
+						</div>
+					</div><div class="row">
+					<div class="mb-3 col-sm-6">
+						<label for="signup_password" class="form-label">Password</label>
+						<input type="password" class="form-control" id="signup_password">
+					</div>
+					<div class="mb-3 col-sm-6">
+						<label for="confirm_password" class="form-label">Confirm Password</label>
+						<input type="password" class="form-control" id="confirm_password">
+					</div>
+					</div>
+					<div class="text-center">
+					<button type="submit" class="btn btn-primary ">Create Account</button>
+						</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="https://source.unsplash.com/1366x400/?technology" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h2 class="bp-white">Welcome to Web Taks</h2>
+				<p class="bp-white">The first mobile-first website</p>
+				<button class="btn  btn-danger">About</button>
+				<button class="btn btn-success">Blog</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img  src="https://source.unsplash.com/1366x400/?laptops" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h2 class="bp-white">Ready on Your Demand</h2>
+				<p class="bp-white">We are ready to serve you on your server too as you want to connect with us.</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img  src="https://source.unsplash.com/1366x400/?computers" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h2 class="bp-white">Wonderful and relieable</h2>
+				<p class="bp-white">Our technical team work wonderfully. We work directly on your system without taking time.</p>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	<span class="visually-hidden">Next</span>
+	</button>
+</div>
+<div class="container mt-5">
+	<div class="row justify-content-center align-items-center">
+		<div class="col">
+			<div class="card">
+				<img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top img-fluid" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Introduction</h5>
+					<p class="card-text">You are welcome to this mobile-first website related to Web Talks. </p>
+					<a href="#" class="btn btn-primary">
+					Read Intro
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://source.unsplash.com/1600x900/?technology" class="card-img-top img-fluid" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Well Done! You are in Right side.</h5>
+					<p class="card-text">We are here to help on your PC faults and errors. We fix it as fast as we can.</p>
+					<a href="#" class="btn btn-primary">
+					Visit Link
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card" >
+				<img src="https://source.unsplash.com/1600x900/?nature,forest" class="card-img-top img-fluid" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Visit Blog</h5>
+					<p class="card-text">Our blog is here to read the openion about society and technology.</p>
+					<a href="#" class="btn btn-primary">
+					See Blog
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container mt-4 d-flex justify-content-between">
+	<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+		<div class="col-10 col-sm-8 col-lg-6">
+			<img src="https://source.unsplash.com/800x400/?laptop" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" width="700" height="500">
+		</div>
+		<div class="col-lg-6">
+			<h1 class="display-5 fw-bold lh-1 mb-3">Responsive to our customers</h1>
+			<p class="lead">Our system automatically detect the new customer who is linked to our website. Our automated system works in the background to find our the needs of your computer system.</p>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+				<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container mt-4" >
+	<div class="row mb-2">
+		<div class="col-md-6">
+			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="col p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary">World</strong>
+					<h3 class="mb-0">Featured post</h3>
+					<div class="mb-1 text-muted">
+						Nov 12
+					</div>
+					<p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="stretched-link">
+					Continue reading
+					</a>
+				</div>
+				<div class="col-auto d-none d-lg-block">
+					<img src="https://source.unsplash.com/1600x900/?mountain" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="col p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-success">Design</strong>
+					<h3 class="mb-0">Post title</h3>
+					<div class="mb-1 text-muted">
+						Nov 11
+					</div>
+					<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="stretched-link">
+					Continue reading
+					</a>
+				</div>
+				<div class="col-auto d-none d-lg-block">
+					<img src="https://source.unsplash.com/1600x900/?technology" class="img-fluid">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#55595c"></rect>
+					<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+		<p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
+		<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+		<svg class="bi me-2" width="40" height="32">
+			<use xlink:href="#bootstrap"></use>
+		</svg>
+		</a>
+		<ul class="nav col-md-4 justify-content-end">
+			<li class="nav-item">
+				<a href="#" class="nav-link px-2 text-muted">
+				Home
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link px-2 text-muted">
+				Features
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link px-2 text-muted">
+				Pricing
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link px-2 text-muted">
+				FAQs
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link px-2 text-muted">
+				About
+				</a>
+			</li>
+		</ul>
+	</footer>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+<script src="../../js/bootstrap-5.1-bundle.js"></script>
+<!-- InstanceBeginEditable name="Custom_scripts" -->
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd -->
+</html>
